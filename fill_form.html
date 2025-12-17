@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test function</title>
+        <link rel="icon" href="assets/jico.jpg">
+    </head>
+    <body>
+                <div>
+        <header style="background-color: cadetblue;">
+            <hr>
+            <h1>Welcome to the web page</h1>
+            <a href="index.html">home</a>
+            <a href="video_player.html">videos</a>
+            <a href="audio_player.html">audio</a>
+            <a href="fill_form.html">form</a>
+            <a href="images.html">images</a>
+            <a href="gifs.html">gifs</a>
+            <a href="video_player.html">videos</a>
+            <a href="lyrics.html">lyrics</a>
+
+            <hr></div>
+
+        </header>
+        <form action="index.php" method="POST" enctype="multipart/form-data" >
+            <label for="username"> username</label>
+            
+            <input id="username" type="text" title="name" placeholder="enter username" required minlength="5" maxlength="25">
+            <br>
+            <label for="password"> password</label>
+            <input type="password" id="password" title="password" placeholder="pass">
+            <br><label for="email">email</label>
+            <input type="email" id="email" placeholder="example@web.com">
+               <br><label for="phone">email</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="0-9{3}-[0-9]{3}-[0-9]{4}">
+
+            <br><label for="date">date</label>
+            <input type="date" id="date" >
+            <br><label for="qty">quantity</label>
+            <input type="number" id="qty" >
+
+            <br><label for="title">Title</label>
+            <br><label for="Mr">Mr</label>
+            <input type="radio" id="Mr" value="Mr" name="title">
+            <br><label for="Ms">Ms</label>
+            <input type="radio" id="Ms" value="Ms" name="title">
+            <br><label for="Dr">Dr</label>
+            <input type="radio" id="Dr" value="Dr" name="title">
+
+            <br><label for="payment">payment method</label>
+            <select id="payment">
+                <option value="upi">upi</option>
+                <option value="visa">visa</option>
+                <option value="giftcard">gift card</option>
+            </select>
+
+            <br><label for="sub">Monthly subscrition</label>
+            <input type="checkbox" id="sub" >
+            <br><br>
+
+            <label for="comment">Comment</label>
+            <textarea id="comment" rows="3" cols="25">
+
+            </textarea>
+            
+            <br><br>
+            <label for="file">File</label>
+            <input type="file"  id="file" accept="image/png,image/jpeg">
+
+
+
+            <br><br><hr>
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </body>
+</html>
